@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+	<class name="com.ashokit.entity.Student"  table=" TBL_STUDENT">
+		<id name="sid" column="ID" /> <!-- we use id property  to treat id as a primary key  -->
+		<property name="sname" column="NAME" /> <!-- property is same as id but we dont treat as primary key -->
+		
+		<!-- if name and column name name no need to write column you van delete it -->
+		<property name ="gender"  />
+		<property name="marks"  />
+	</class>
+</hibernate-mapping>
